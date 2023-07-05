@@ -313,33 +313,39 @@ main {
     background-color: var(--soft-blue);
 }
 .main-features-container{
+    position: relative;
     width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding-top: 70px;
+    padding-bottom: 30px;
     background-color:var(--warm-black);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 70px;
-    padding-bottom: 30px;
-    height: auto;
-    position: relative;
 }
 .main-features-container .separator-image-container{
     position: absolute;
-    top: -10px;
     width: 40px;
-    height: 24px;
+    height: 25px;
+    background-image: url('../assets/icons/batata.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -10px;
 }
 .main-features-container .main-features__title{
+    width: 90%;
+    min-width: 288px;
     color: var(--just-white);
     font-weight: bold;
     font-size: 2.4rem;
     line-height: 2.6rem;
     text-align: center;
-    width: 90%;
-    height: 50px;
+    height: auto;
     margin-bottom: 30px;
 }
-.main-features-container > p {
+.main-features-container > div>p {
     color:#808080;
     width: 90%;
     font-weight: 500;
@@ -350,6 +356,8 @@ main {
 }
 .main-features-container .features__card{
     width: 90%;
+    min-width: 288px;
+    max-width: 400px;
     height: 152px;
     margin: 0 auto;
     background-color:#282623;
@@ -360,12 +368,31 @@ main {
 
 }
 
-.main-features-container .features__card img{
+.features-cards-container .features__card .card-icon-container{
+
+    display: inline-block;
     width: 24px;
     height: 24px;
     margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-.main-features-container .features__card h3{
+
+.features-cards-container .features__card .clock{
+    background-image: url('../assets/icons/clock.svg');
+}
+.features-cards-container .features__card .eye{
+    background-image: url('../assets/icons/eye.svg');
+}
+.features-cards-container .features__card .dollar-sign{
+    background-image: url('../assets/icons/dollar-sign.svg');
+}
+.features-cards-container .features__card .check-circle{
+    background-image: url('../assets/icons/check-circle.svg');
+}
+
+.main-features-container .features__card .featured-cards__title{
     font-size: 1.8rem;
     line-height: 1.8rem;
     font-weight: bold;
@@ -373,7 +400,7 @@ main {
     margin-bottom: 10px;
 }
 
-.main-features-container .features__card p{
+.main-features-container .features__card .featured-cards__body{
     font-size: 1.4rem;
     line-height: 1.8rem;
     font-weight: 500;
