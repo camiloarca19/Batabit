@@ -216,7 +216,7 @@ main {
     top: 113px;
 }
 
-/* #checkbox{
+#checkbox{
     display: none;
 }
 #checkbox:checked ~ .main-currency-table{
@@ -224,7 +224,7 @@ main {
 }
 #checkbox:checked ~ .main-commissions-table{
     display:block;
-} */
+}
 
 .currency-table__container td, .commissions-table__container td{
     width: 50%;
