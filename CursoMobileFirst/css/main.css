@@ -156,7 +156,10 @@ main {
     height: 360px;
     margin: 0 auto;
     font-family:'Inter', sans-serif ;
-    
+    display: none;
+}
+.main-currency-table{
+    display:block;
 }
 
  .main-currency-table .currency-table__title{
@@ -189,7 +192,7 @@ main {
     width: 100%;
     height: 100%;
 }
-.currency-table__container div{
+#currency-label{
     position:absolute;
     background-image: url('../assets/icons/right-arrow.svg');
     background-size: cover;
@@ -200,7 +203,7 @@ main {
     right: -40px;
     top: 113px;
 }
-.commissions-table__container div{
+#comision-label{
     position:absolute;
     background-image: url('../assets/icons/right-arrow.svg');
     background-size: cover;
@@ -212,6 +215,16 @@ main {
     left: -40px;
     top: 113px;
 }
+
+/* #checkbox{
+    display: none;
+}
+#checkbox:checked ~ .main-currency-table{
+    display:none;
+}
+#checkbox:checked ~ .main-commissions-table{
+    display:block;
+} */
 
 .currency-table__container td, .commissions-table__container td{
     width: 50%;
