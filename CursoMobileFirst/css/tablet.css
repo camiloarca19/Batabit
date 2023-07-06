@@ -1,0 +1,23 @@
+.main-features-container{
+    
+}
+.features-cards-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 768px;
+
+}
+.main-features-container .features__card{
+    width: 100%;
+    min-width: 288px;
+    max-width: 360px;
+    min-height: 152px;
+    margin: 0 auto;
+    background-color:#282623;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px 0px #00000029;
+    padding: 14px 16px;
+
+}
