@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BAtabit</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +15,7 @@
         <div class="header__title-container">
             <h1>La próxima revolución en el intercambio de criptomonedas.</h1>
             <p>Batatabit te ayuda a navegar entre los diferentes precios y tendencias.</p>
-            <a href="" class="header__button">Conoce nuestros planes <span></span></a>
+            <a href="#plans" class="header__button">Conoce nuestros planes <span></span></a>
         </div>
     </header>
     <main>
@@ -119,36 +119,45 @@
             <h2>Conócelo hoy.</h2>
         </section>
         
-        <section class="main-plans-container">
+        <section id="plans" class="main-plans-container">
             <div class="main-plans-container__title">
                 <h2>Escoge el plan que mejor se ajuste a ti.</h2>
                 <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
             </div>
             <section class="plans-container__cards">
-                <article class="plan__card">
+                  <article class="card-basic plan__card">
+                    <span class="plan--recomended">Básico</span>
+                    <p class="plan-card-title">Pago Mensual</p>
+                    <p class="plan-card-price"><sup>$</sup>19</p>
+                    <p class="plan-card-body">*Plan básico con todos los beneficios.</p>
+                    <button class="plan-card-button">Escoger este <span></span></button>
+                </article>
+                <article class="card-recomended plan__card" >
                     <span class="plan--recomended">Recomendado</span>
                     <p class="plan-card-title">Pago Anual</p>
-                    <p class="plan-card-price"><span>$</span>99</p>
+                    <p class="plan-card-price"><sup>$</sup>99</p>
                     <p class="plan-card-body">*Ahorras $129 comparado al plan mensual.</p>
                     <button class="plan-card-button">Escoger este <span></span></button>
                 </article>
-                <article class="plan__card">
-                    <span class="plan--recomended">Recomendado</span>
-                    <p class="plan-card-title">Pago Anual</p>
-                    <p class="plan-card-price"><span>$</span>99</p>
-                    <p class="plan-card-body">*Ahorras $129 comparado al plan mensual.</p>
+                <article class="card-unlimited plan__card" id="unlimited">
+                    <span class="plan--recomended">Ilimitado</span>
+                    <p class="plan-card-title">Unico Pago</p>
+                    <p class="plan-card-price"><sup>$</sup>299</p>
+                    <p class="plan-card-body">*Exclusivo para clientes VIP.</p>
                     <button class="plan-card-button">Escoger este <span></span></button>
                 </article>
-                <article class="plan__card">
-                    <span class="plan--recomended">Recomendado</span>
-                    <p class="plan-card-title">Pago Anual</p>
-                    <p class="plan-card-price"><span>$</span>99</p>
-                    <p class="plan-card-body">*Ahorras $129 comparado al plan mensual.</p>
-                    <button class="plan-card-button">Escoger este <span></span></button>
-                </article>
-
             </section>
         </section>
+        <footer class="footer">
+            <ul class="footer__text-container">
+                <li><a href="">Linkedin</a></li>
+                <li><a href="">Crunchbase</a></li>
+                <li><a href="">Hackernews</a></li>
+            </ul>
+            <div class="footer__img-container">
+                <span></span>
+            </div>
+        </footer>
     </main>
     <footer></footer>
 </body>

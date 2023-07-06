@@ -31,6 +31,7 @@ font-family: 'Inter', sans-serif; */
 html{
     font-size: 62.5%;
     font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
 }
 header{
     position: relative;
@@ -436,8 +437,9 @@ main {
 }
 .main-plans-container__title{
     width: 90%;
-    min-width: 112px;
+    min-width: 288px;
     margin-bottom: 50px;
+    height: auto;
 }
 .main-plans-container__title h2{
     font-size: 2.4rem;
@@ -457,10 +459,21 @@ main {
 
 .plans-container__cards{
     display: flex;
-    margin: 0 8px;
+    flex-wrap: nowrap;
+    height: auto;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: center;
+    margin: 0 50px;
+    width: 100%;
+    padding: 18px 70px;
 }
 .plans-container__cards .plan__card{
-    width: 190px;
+    
+    position: relative;
+    scroll-snap-align: center;
+    min-width: 190px;
     height: 250px;
     background-color: var(--just-white);
     box-shadow: 0px 4px 8px 0px #59491E29;
@@ -468,10 +481,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
     font-size: 1.2rem;
     font-weight: 500;
     padding:30px 0;
+    margin:20px 5px;
 }
 
 .plan__card .plan--recomended{
@@ -485,6 +498,7 @@ main {
     margin: 0 auto;
     position:absolute;
     top: -15px;
+    text-align: center;
 }
 .plan__card .plan-card-title{
     font-size: 1.4rem;
@@ -500,15 +514,15 @@ main {
     height: 56px;
     margin-bottom: 16px;
 }
-.plan__card .plan-card-price>span{
-    font-family: 'Inter', sans-serif;
+.plan__card .plan-card-price sup{
     font-size: 1.2rem;
-    font-weight: bold;
-    color: #000000;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
     position:absolute;
-    top:10px;
+    top: 10px;
     left: -10px;
 }
+
 .plan__card .plan-card-body{
     line-height: 1.5rem;
     color: #757575;
@@ -540,6 +554,52 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     margin-left: 5px;
-
 }
 
+.plans-container__cards .card-basic>span{
+    background-color: var(--secondary-blue);
+}
+
+.plans-container__cards .card-unlimited>span{
+    background-color: var(--grey);
+
+}
+.plans-container__cards  #unlimited{
+    background-color:var(--black);
+}
+.plans-container__cards .card-unlimited .plan-card-price{
+    color: var(--just-white);
+}
+#unlimited button, #unlimited p:nth-child(2){
+    color:var(--just-white);
+    background-color:var(--warm-black)
+}
+
+.footer{
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footer .footer__text-container  li a{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color:var(--just-white);
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+.footer .footer__text-container li{
+    list-style:none; 
+
+}
+.footer .footer__img-container span{
+    display: inline-block;
+    width: 64px;
+    height: 50px;
+    background-image: url('../assets/img/logo-footer.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
