@@ -475,7 +475,8 @@ main {
     margin: 0 50px;
     width: 100%;
     padding: 18px 70px;
-    justify-content: center;
+    justify-content: space-between;
+    max-width: 750px;
 }
 .plans-container__cards .plan__card{
     
